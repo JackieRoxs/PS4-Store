@@ -1,0 +1,66 @@
+<html> 
+    <head> 
+        <title>PS4 Game Exploit</title>
+        <style> 
+            .gfg { 
+                text-align:center; 
+                font-size:40px; 
+                font-weight:bold; 
+                color:blue; 
+            } 
+            
+            
+            #image{
+                    position: absolute;
+                    left: 200px;
+            }
+            #image2{
+                    position: absolute;
+                    left: 600px;
+            }
+            #image3{
+                    position: absolute;
+                    left: 1000px;
+            }
+            
+            #test{
+                position: relative;
+                left: 550px;
+                top: 500px;
+            }
+            
+            #test2{
+                position: relative;
+                left: 600px;
+            }
+        </style> 
+    </head>
+        <div class = "gfg" onmouseover = "myFunction()"> 
+                PS4 Access Games Early Exploit 
+        </div> 
+        <br>
+        <h3 id="test2"> Please click a game to continue</h3>
+        <br>
+        <input type="image" id="image"
+       src="https://codehs.com/uploads/0a21de2c0a7fb26c02f3f120e3023fca" width="320" height="500">
+        <input type="image" id="image2"
+       src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6255/6255151_sd.jpg" width="320" height="500">
+        <input type="image" id="image3"
+       src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6352/6352250_sd.jpg" width="410" height="500">
+        <br>
+        <h2 id="test"> </h2>
+        <script>
+        var str = "Done! Click Here to Continue";
+  var result = str.link("psns:browse?product=UP8802-BLUS30463_00-RBNEVERGOF2C4C00");
+document.getElementById("image").onclick = function() {myFunction()};
+document.getElementById("image2").onclick = function() {myFunction()};
+document.getElementById("image3").onclick = function() {myFunction()};
+function myFunction() {
+  document.getElementById("test").innerHTML = "Loading. Please wait ten seconds.";
+  setTimeout(function abc(){
+       document.getElementById("test").innerHTML = result;
+    }, 10000);
+}
+</script>
+    </body> 
+</html>
