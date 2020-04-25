@@ -1,0 +1,27 @@
+<html>
+    <title> PlayStation Store Opener</title>
+<body>
+
+<p id="demo"></p>
+
+<button onclick="myFunction()">Create Link</button>
+<script>
+var test = prompt("Enter PS Store Link");
+document.getElementById("demo").innerHTML = test;
+
+function myFunction() {
+    var str = document.getElementById("demo").innerHTML; 
+    var res = str.replace("https://store.playstation.com/en-us/product/", "psns:browse?product=");
+    var finish = res.link(res);
+    document.getElementById("demo").innerHTML = finish;
+
+}
+
+</script>
+
+<a href="https://mandogy.codehs.me/test1.html">Rick Roll PS4 Joke</a>
+
+
+
+</body>
+</html>
